@@ -1,0 +1,6 @@
+[submodule "service4-5"]
+	path = service4-5
+	url = https://github.com/BlueBeret/ms4-ms5.git
+[submodule "client-service1"]
+	path = client-service1
+	url = git@github.com:syamtrax/microservices.git

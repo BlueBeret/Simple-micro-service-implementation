@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "submodules-install": "^1.0.2"
+  },
+  "submodules": [
+    "client-service1/client/**",
+    "service4-5/**"
+  ]
+}
