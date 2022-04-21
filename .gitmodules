@@ -4,3 +4,6 @@
 [submodule "client-service1"]
 	path = client-service1
 	url = git@github.com:syamtrax/microservices.git
+[submodule "service2-3"]
+	path = service2-3
+	url = git@github.com:RheznandyaAR/GroupScalable.git
