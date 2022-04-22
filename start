@@ -1,0 +1,14 @@
+#!/usr/bin/ bash
+systemclt start daemon
+docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management &
+source service2-3/venv/bin/activate
+
+node service4-5/ms5.js &
+node service4-5/ms4.js &
+python service2-3/service3.py &
+python service2-3/service2.py &
+python client-service1/flask-server/server.py &
+cd dataserver && python dataserver.py &
+cd  ../client-service1/client && npm start
+
+
